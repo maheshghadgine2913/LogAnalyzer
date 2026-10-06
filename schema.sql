@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS log_analyzer;
+USE log_analyzer;
+
+CREATE TABLE IF NOT EXISTS logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    log_time DATETIME NOT NULL,
+    level VARCHAR(10) NOT NULL,
+    message VARCHAR(255) NOT NULL
+);
